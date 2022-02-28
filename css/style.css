@@ -1,0 +1,144 @@
+/************************
+Golbal
+*************************/
+*,
+a:hover {
+  transition: all 0.3s ease-out 0s;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+}
+
+body {
+  background: url(../images/bg.jpg), #ad1213;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/************************
+Layous
+*************************/
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  padding: 0rem 0.03rem;
+  background: #ad1213;
+  z-index: 9999;
+  width: 100%;
+}
+
+.slogan img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 0rem;
+  max-width: 1100px;
+}
+
+.star_overCover .-mask {
+  background: url(../images/img-letter-deco.png) no-repeat;
+  width: 1200px;
+  height: 1002px;
+  display: block;
+  position: absolute;
+  z-index: 99;
+}
+
+.the_letters {
+  position: relative;
+  top: -9rem;
+  z-index: -1;
+  font-weight: 800;
+  font-size: 25px;
+  color: #010101;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1106px;
+  height: 100vh;
+  max-height: 734px;
+  background: url(../images/section-bg.png) no-repeat;
+}
+
+.the_letters section.content {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding-top: 10rem;
+}
+
+.the_letters section.the_link {
+  margin: 1.81rem auto;
+  text-align: center;
+}
+
+.the_letters section.the_link .hyperLink a {
+  margin: 1.81rem auto;
+  display: inline-block;
+  font-weight: 500;
+  background: #db2d29;
+  color: #fceebf;
+  text-decoration: none;
+  padding: 0.67rem 1rem;
+  border-radius: 3.125rem;
+  -webkit-border-radius: 3.125rem;
+  -moz-border-radius: 3.125rem;
+  -ms-border-radius: 3.125rem;
+  -o-border-radius: 3.125rem;
+}
+
+.the_letters section.the_link .hyperLink a:hover {
+  background: #bc2320;
+}
+
+.the_8points {
+  width: 80%;
+  margin: 0 auto 3.8rem;
+}
+
+.the_8points blockquote {
+  display: block;
+  margin: 0 auto;
+  background: url("../images/the_8points_bg.png") no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 246px;
+}
+
+.the_8points .row > div {
+  text-align: center;
+}
+
+.the_8points .row blockquote {
+  padding-top: 1rem;
+}
+
+.the_8points .row blockquote > p {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 0.1rem;
+  font-weight: bold;
+}
+
+.the_8points h3 {
+  margin-bottom: 0;
+}
+
+.the_8points h3::after {
+  content: '';
+  background: url(../images/h3-after.png) no-repeat;
+  height: 25px;
+  display: inline-block;
+  width: 100%;
+  background-position: center;
+}
+
+/* footer */
+footer {
+  background: url(../images/footer_bg.png) no-repeat;
+  padding-bottom: 12rem;
+  background-position: center bottom;
+}
+/*# sourceMappingURL=style.css.map */
