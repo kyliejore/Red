@@ -22,7 +22,6 @@ Layous
 main {
   background: url(../images/header-gb.png) no-repeat;
   background-position: right top;
-  background-size: contain;
 }
 
 .logo {
@@ -99,7 +98,7 @@ header nav {
   position: relative;
   z-index: 2;
   top: 0rem;
-  max-width: 1100px;
+  max-width: 980px;
 }
 
 .star_overCover .-mask {
@@ -116,7 +115,7 @@ header nav {
   top: -9rem;
   z-index: 1;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 20px;
   color: #010101;
   display: block;
   margin: 0 auto;
@@ -125,6 +124,7 @@ header nav {
   height: 100vh;
   max-height: 734px;
   background: url(../images/section-bg.png) no-repeat;
+  background-size: contain;
 }
 
 .the_letters section.content {
@@ -135,7 +135,7 @@ header nav {
 }
 
 .the_letters section.the_link {
-  margin: 1.81rem auto;
+  margin: 4.81rem auto 0rem;
   text-align: center;
 }
 
@@ -205,10 +205,55 @@ footer {
   background: url(../images/footer_bg.png) no-repeat;
   padding-bottom: 1rem;
   background-position: center bottom;
-  background-size: contain;
+  background-size: cover;
 }
 
 .footerInfo {
   text-align: center;
+  width: 80%;
+  margin: 2rem auto;
+  color: #fff;
+}
+
+.footerInfo ul.footerContact {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.footerInfo ul.footerContact li {
+  list-style: none;
+  float: left;
+  width: calc(100%/3);
+}
+
+.footerInfo p.warnInfo {
+  font-size: 15px;
+  color: #010101;
+}
+
+.navbar-brand {
+  margin-right: 0rem;
+}
+
+/**/
+@media screen and (max-width: 991px) {
+  .the_letters {
+    background: #fbeab5;
+  }
+  section.the_link {
+    margin: 0.81rem auto 0rem;
+  }
+  section.the_link img.slogan-2 {
+    width: 91%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  span.sparkle {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

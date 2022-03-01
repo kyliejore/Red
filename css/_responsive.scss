@@ -1,0 +1,17 @@
+@media screen and (max-width:991px) {
+    .the_letters {
+        background: #fbeab5;
+    }
+    section.the_link {
+        margin: 0.81rem auto 0rem;
+        img.slogan-2 {
+            width: 91%;
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    span.sparkle {
+        display: none!important;
+    }
+}

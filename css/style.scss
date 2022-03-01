@@ -28,7 +28,7 @@ Layous
 main {
     background: url(../images/header-gb.png)no-repeat;
     background-position: right top;
-    background-size: contain;
+    // background-size: cover;
 }
 
 .logo {
@@ -94,7 +94,7 @@ header {
         position: relative;
         z-index: 2;
         top: 0rem;
-        max-width: 1100px;
+        max-width: 980px;
     }
 }
 
@@ -121,7 +121,7 @@ header {
         padding-top: 10rem;
     }
     section.the_link {
-        margin: 1.81rem auto;
+        margin: 4.81rem auto 0rem;
         text-align: center;
         .hyperLink {
             a {
@@ -144,7 +144,7 @@ header {
         }
     }
     font-weight:800;
-    font-size: 25px;
+    font-size: 20px;
     color: #010101;
     display: block;
     margin: 0 auto;
@@ -153,6 +153,7 @@ header {
     height: 100vh;
     max-height: 734px;
     background: url(../images/section-bg.png)no-repeat;
+    background-size: contain;
 }
 
 .the_8points {
@@ -200,9 +201,36 @@ footer {
     background: url(../images/footer_bg.png)no-repeat;
     padding-bottom: 1rem;
     background-position: center bottom;
-    background-size: contain;
+    background-size: cover;
 }
 
 .footerInfo {
     text-align: center;
+    width: 80%;
+    margin: 2rem auto;
+    color: #fff;
+    ul.footerContact {
+        font-weight: bold;
+        display: flex;
+        margin-bottom: 3rem;
+        li {
+            list-style: none;
+            float: left;
+            width: calc(100%/3);
+        }
+    }
+    p.warnInfo {
+        font-size: 15px;
+        color: #010101;
+    }
 }
+
+// 
+.navbar-brand {
+    margin-right: 0rem;
+}
+
+
+/**/
+
+@import "responsive";

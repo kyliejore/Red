@@ -12,6 +12,10 @@
 
     <!-- ===== bootstrap =====-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ===== AOS ======= -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- ===== style =====-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,7 +29,7 @@
 
 
 
-                <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" class="logo"></a>
+                <a class="navbar-brand" style="text-align: center;" href="#"><img src="images/logo.svg" alt="" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,13 +37,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto" style="margin: 0 auto;">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">联系客服</a>
+                            <a class="nav-link" href="https://direct.lc.chat/12263667/" target="_blank">联系客服</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">开立真实帐户</a>
+                            <a class="nav-link" href="https://login.blmkt.com/OpenAccount.aspx" target="_blank">开立真实帐户</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">用户登录</a>
+                            <a class="nav-link" href="https://login.blmkt.com/" target="_blank">用户登录</a>
                         </li>
 
                     </ul>
@@ -83,13 +87,14 @@
 
                         </section>
 
-                        <section class="the_link">
+                        <section class="the_link" data-aos="fade-up" data-aos-offset="-310" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false" data-aos-anchor-placement="top-center">
 
-                            <img src="images/slogan-2.png" alt="">
+                            <img src="images/slogan-2.png" alt="" class="slogan-2">
 
                             <div class="hyperLink">
                                 <a href="https://www.blmkts.com" target="_blank"><img src="images/icon-earth.png" alt=""> https://www.blmkts.com</a>
                             </div>
+
                         </section>
 
                     </blockquote>
@@ -102,7 +107,7 @@
     <!-- footer -->
     <footer>
         <!-- row1 -->
-        <div class="container-fluid the_8points">
+        <div class="container-fluid the_8points" data-aos="fade-up" data-aos-offset="-250" data-aos-delay="130" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <blockquote>
@@ -138,7 +143,7 @@
             </div>
         </div>
         <!-- row2 -->
-        <div class="container-fluid the_8points">
+        <div class="container-fluid the_8points" data-aos="fade-up" data-aos-offset="-350" data-aos-delay="150" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <blockquote>
@@ -170,11 +175,20 @@
                 </div>
             </div>
 
+
             <!--  -->
             <div class="footerInfo">
-                <p>4001-209-086 </p>
-                <p>cs@blmkt.com</p>
 
+                <ul class="footerContact">
+                    <li> <img src="images/icon-phone-white.png" alt=""> 4001-209-086</li>
+                    <li><img src="images/icon-mail-white.png" alt=""> cs@blmkt.com</li>
+                    <li> <img src="images/icon-earth-white.png" alt=""> www.blmkts.com</li>
+                </ul>
+
+
+                <p class="warnInfo">
+                    風險警告：保證金交易具高風險，投資者考慮投資金額時需視乎自身的能力。投資有盈有虧，您可能因此損失全部本金。保證金交易不一定適合所有投資者，交易前請確認您已完全了解相關風險。
+                </p>
 
             </div>
         </div>
@@ -184,6 +198,11 @@
 
 </body>
 
+<!-- ===== AOS =====-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 
 <!-- ===== Bootstrap js =====-->
