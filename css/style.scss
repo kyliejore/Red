@@ -14,7 +14,8 @@ a:hover {
 $bg_red:#ad1213;
 $the_link_color:#db2d29;
 body {
-    background: url(../images/bg.jpg), $bg_red;
+    // background: url(../images/bg.jpg), $bg_red;
+    background: $bg_red;
     background-repeat: no-repeat;
     background-position: center top;
 }
@@ -23,6 +24,12 @@ body {
 /************************
 Layous
 *************************/
+
+main {
+    background: url(../images/header-gb.png)no-repeat;
+    background-position: right top;
+    background-size: contain;
+}
 
 .logo {
     width: 77%;
@@ -50,11 +57,42 @@ header {
 }
 
 .slogan {
+    .sparkle {
+        position: absolute;
+        z-index: 9;
+        left: 46.5%;
+        width: 360px;
+        height: 316px;
+        display: inline-block;
+        opacity: 1;
+        // 
+        // 
+        img {
+            width: 100%;
+        }
+        animation: sparkleRotate 1.8s 0s infinite ease;
+        -webkit-animation: sparkleRotate 1.8s 0s infinite ease;
+    }
+    /* sparkle animation */
+    @keyframes sparkleRotate {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: .8;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    // 
+    // 
     img {
         width: 100%;
         display: block;
         margin: 0 auto;
         position: relative;
+        z-index: 2;
         top: 0rem;
         max-width: 1100px;
     }
@@ -75,7 +113,7 @@ header {
 .the_letters {
     position: relative;
     top: -9rem;
-    z-index: -1;
+    z-index: 1;
     section.content {
         width: 80%;
         margin: 0 auto;
@@ -160,8 +198,9 @@ header {
 
 footer {
     background: url(../images/footer_bg.png)no-repeat;
-    padding-bottom: 12rem;
+    padding-bottom: 1rem;
     background-position: center bottom;
+    background-size: contain;
 }
 
 .footerInfo {

@@ -11,7 +11,7 @@ a:hover {
 }
 
 body {
-  background: url(../images/bg.jpg), #ad1213;
+  background: #ad1213;
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -19,6 +19,12 @@ body {
 /************************
 Layous
 *************************/
+main {
+  background: url(../images/header-gb.png) no-repeat;
+  background-position: right top;
+  background-size: contain;
+}
+
 .logo {
   width: 77%;
 }
@@ -42,11 +48,56 @@ header nav {
   width: 60%;
 }
 
+.slogan {
+  /* sparkle animation */
+}
+
+.slogan .sparkle {
+  position: absolute;
+  z-index: 9;
+  left: 46.5%;
+  width: 360px;
+  height: 316px;
+  display: inline-block;
+  opacity: 1;
+  animation: sparkleRotate 1.8s 0s infinite ease;
+  -webkit-animation: sparkleRotate 1.8s 0s infinite ease;
+}
+
+.slogan .sparkle img {
+  width: 100%;
+}
+
+@-webkit-keyframes sparkleRotate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sparkleRotate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .slogan img {
   width: 100%;
   display: block;
   margin: 0 auto;
   position: relative;
+  z-index: 2;
   top: 0rem;
   max-width: 1100px;
 }
@@ -63,7 +114,7 @@ header nav {
 .the_letters {
   position: relative;
   top: -9rem;
-  z-index: -1;
+  z-index: 1;
   font-weight: 800;
   font-size: 25px;
   color: #010101;
@@ -152,8 +203,9 @@ header nav {
 /* footer */
 footer {
   background: url(../images/footer_bg.png) no-repeat;
-  padding-bottom: 12rem;
+  padding-bottom: 1rem;
   background-position: center bottom;
+  background-size: contain;
 }
 
 .footerInfo {
