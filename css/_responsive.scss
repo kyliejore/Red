@@ -15,3 +15,18 @@
         display: none!important;
     }
 }
+
+@media screen and (max-width:1029px) {
+    p.warnInfo {
+        color: #fff!important;
+    }
+    .the_8points {
+        width: 93%;
+    }
+    footer {
+        background: none;
+        .footerInfo {
+            width: 100%;
+        }
+    }
+}

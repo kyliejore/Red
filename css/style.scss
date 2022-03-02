@@ -210,10 +210,17 @@ footer {
     margin: 2rem auto;
     color: #fff;
     ul.footerContact {
+        padding-left: 0;
         font-weight: bold;
         display: flex;
         margin-bottom: 3rem;
         li {
+            text-align: center;
+            img {
+                display: block;
+                margin: 0 auto;
+                height: 21px;
+            }
             list-style: none;
             float: left;
             width: calc(100%/3);
@@ -222,12 +229,22 @@ footer {
     p.warnInfo {
         font-size: 15px;
         color: #010101;
+        text-align: left;
     }
 }
 
 // 
 .navbar-brand {
     margin-right: 0rem;
+}
+
+ul.navbar-nav {
+    li {
+        a {
+            font-weight: 900!important;
+            color: #272727!important;
+        }
+    }
 }
 
 

@@ -216,6 +216,7 @@ footer {
 }
 
 .footerInfo ul.footerContact {
+  padding-left: 0;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,18 +225,31 @@ footer {
 }
 
 .footerInfo ul.footerContact li {
+  text-align: center;
   list-style: none;
   float: left;
   width: calc(100%/3);
 }
 
+.footerInfo ul.footerContact li img {
+  display: block;
+  margin: 0 auto;
+  height: 21px;
+}
+
 .footerInfo p.warnInfo {
   font-size: 15px;
   color: #010101;
+  text-align: left;
 }
 
 .navbar-brand {
   margin-right: 0rem;
+}
+
+ul.navbar-nav li a {
+  font-weight: 900 !important;
+  color: #272727 !important;
 }
 
 /**/
@@ -254,6 +268,21 @@ footer {
 @media screen and (max-width: 700px) {
   span.sparkle {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 1029px) {
+  p.warnInfo {
+    color: #fff !important;
+  }
+  .the_8points {
+    width: 93%;
+  }
+  footer {
+    background: none;
+  }
+  footer .footerInfo {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
