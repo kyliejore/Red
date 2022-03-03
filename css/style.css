@@ -208,6 +208,11 @@ footer {
   background-size: cover;
 }
 
+footer h3 img {
+  max-width: 117px;
+  height: 41px;
+}
+
 .footerInfo {
   text-align: center;
   width: 80%;

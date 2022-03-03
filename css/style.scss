@@ -202,6 +202,12 @@ footer {
     padding-bottom: 1rem;
     background-position: center bottom;
     background-size: cover;
+    h3 {
+        img {
+            max-width: 117px;
+            height: 41px
+        }
+    }
 }
 
 .footerInfo {
